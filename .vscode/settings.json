@@ -1,0 +1,34 @@
+{
+    "postman.settings.dotenv-detection-notification-visibility": false,
+    "sqltools.connections": [
+        {
+            "mysqlOptions": {
+                "authProtocol": "default",
+                "enableSsl": "Disabled"
+            },
+            "ssh": "Disabled",
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 4000,
+            "driver": "TiDB",
+            "name": "Akilesh",
+            "database": "sip_db",
+            "username": "3tVSzGRRnvfBQUs.root"
+        },
+        {
+            "mysqlOptions": {
+                "authProtocol": "default",
+                "enableSsl": "Disabled"
+            },
+            "ssh": "Disabled",
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 4000,
+            "driver": "TiDB",
+            "name": "TiDBCloud",
+            "group": "MyDatabases",
+            "database": "sip_db",
+            "username": "3tVSzGRRnvfBQUs.root"
+        }
+    ]
+}
