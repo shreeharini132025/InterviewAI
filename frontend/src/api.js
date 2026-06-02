@@ -1,7 +1,9 @@
 import axios from 'axios';
 
+const API_BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000/api';
+
 const API = axios.create({
-  baseURL: 'http://localhost:5000/api',
+  baseURL: API_BASE_URL,
   timeout: 10000,
 });
 
@@ -19,7 +21,7 @@ API.interceptors.response.use(
     if (error.response?.status === 401) {
       localStorage.removeItem('sip_token');
       localStorage.removeItem('sip_user');
-      window.location.href = '/login';
+      window.location.hash = '#/login';
     }
     return Promise.reject(error);
   }
